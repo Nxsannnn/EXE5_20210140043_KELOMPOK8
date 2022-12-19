@@ -11,6 +11,7 @@ namespace Exercise5
         public Node ichsan;
         private Node next;
         public Node munawwar;
+        public string ell;
         public Node(int ell)
         {
             this.ichsan = this.munawwar = null;
@@ -44,6 +45,10 @@ namespace Exercise5
                 this.munawwar = null;
             }
             Console.WriteLine("Item Deleted");
+        }
+        public void display()
+        {
+
         }
         static void Main(string[] args)
         {
