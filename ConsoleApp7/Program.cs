@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Exercise5
 {
+    class Node
+    {
+        public Node next;
+        public string ell;
+    }
+
     class Queue
     {
         public Node ichsan;
@@ -68,6 +74,15 @@ namespace Exercise5
                             Console.WriteLine("Enter a name;");
                             string num = Convert.ToString(Console.ReadLine());
                             q.insert(num);
+                            break;
+                        case '2':
+                            q.delete();
+                            break;
+                        case '3':
+                            return;
+
+                        default:
+                            Console.WriteLine("Invalid Option");
                             break;
                     }
                 }
