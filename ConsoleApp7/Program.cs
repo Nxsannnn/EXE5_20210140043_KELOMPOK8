@@ -55,7 +55,14 @@ namespace Exercise5
             {
                 try
                 {
-                    try
+                    Console.WriteLine("menu");
+                    Console.WriteLine("1. implement insert operation ");
+                    Console.WriteLine("2. implement delete operation");
+                    Console.WriteLine("\nEnter your choise");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+
                 }
             }
         }
