@@ -4,10 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise5_
+namespace Exercise5
 {
-    internal class Program
+    class Node
     {
+        public Node ichsan;
+        public Node munawwar;
+        public Node()
+        {
+            this.ichsan = this.munawwar = null;
+        }
         static void Main(string[] args)
         {
         }
