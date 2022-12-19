@@ -58,11 +58,18 @@ namespace Exercise5
                     Console.WriteLine("menu");
                     Console.WriteLine("1. implement insert operation ");
                     Console.WriteLine("2. implement delete operation");
+                    Console.WriteLine("3. Exit");
                     Console.WriteLine("\nEnter your choise");
                     ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                     switch (ch)
-
+                    {
+                        case '1':
+                            Console.WriteLine("Enter a name;");
+                            string num = Convert.ToString(Console.ReadLine());
+                            q.insert(num);
+                            break;
+                    }
                 }
             }
         }
