@@ -6,33 +6,34 @@ using System.Threading.Tasks;
 
 namespace Exercise5
 {
-    class Node
+    class Queue
     {
         public Node ichsan;
-        private Node next;
         public Node munawwar;
-        public string ell;
-        public Node(int ell)
+
+        public Queue()
         {
             this.ichsan = this.munawwar = null;
         }
         public void insert(int ell)
         {
-            Node baru = new Node(ell);
+            Node temp= new Node(ell);
+
             if (this.munawwar == null)
             {
-                this.ichsan = this.munawwar = baru;
+                this.ichsan = this.munawwar = temp;
             }
             else
             {
-                this.munawwar.next = baru;
-                this.munawwar = baru; 
+                this.munawwar.next = temp;
+                this.munawwar = temp; 
             }
             Console.WriteLine("Inserted", ell);
         }
         public void delete()
         {
-            if(this.ichsan == null)
+            if (this.ichsan == null)
+                return;
             {
                 Console.WriteLine("Queue Empty");
                 return;
@@ -46,12 +47,17 @@ namespace Exercise5
             }
             Console.WriteLine("Item Deleted");
         }
-        public void display()
-        {
-
-        }
         static void Main(string[] args)
         {
+            Queue q = new Queue();
+            char ch;
+            while (true) 
+            {
+                try
+                {
+                    try
+                }
+            }
         }
     }
 }
